@@ -1,11 +1,11 @@
 #include<stdio.h>
-int main()
-{
-    int a,b,c;
-    scanf("%d",&a);
-    b=a/4;
-   if(a%4==0)
-   printf("%d",b);
-   else
-   printf("%d",++b);
+int main(){
+    int x;
+    scanf("%d",&x);
+    if(x%4==0){
+        printf("%d",x/4);
+    }
+    else{
+        printf("%d",x/4+1);
+    }
 }
