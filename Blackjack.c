@@ -1,11 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c,d,x;
+    int a,b,c,d;
     scanf("%d%d",&a,&b);
-    x=a+b;
-    c=21-x;
-    if(c>0&&c<11)
+    c=21-(a+b);
+    if(c<=10)
     printf("%d",c);
     else
     printf("-1");
