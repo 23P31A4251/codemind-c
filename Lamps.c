@@ -1,16 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int n,r,x,y,b,f,g,h;
-    scanf("%d%d%d%d",&n,&r,&x,&y);
-    b=n-r;
-    g=n*x;
-   f=r*x+b*y;
-    if(x<y)
-    printf("%d",g);
-    else
+    int a,red,c,d,blue,cr,cb,h,f,g,i;
+    scanf("%d%d%d%d%d",&a,&red,&cr,&cb);
+    blue=a-red;
+    f=a*cr;
+    h=red*cr;
+    i=blue*cb;
+    g=h+i;
+    if(f<g)
     printf("%d",f);
-    
-    
+    else 
+    printf("%d",g);
     
 }
