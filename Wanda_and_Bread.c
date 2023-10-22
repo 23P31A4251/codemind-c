@@ -6,6 +6,7 @@ int main()
     d=c*b;
     if(a<=d)
     printf("YES");
-    else 
+    else
     printf("NO");
+    
 }
