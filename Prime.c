@@ -1,24 +1,49 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
+
 {
-    int i=2,a,temp=0;
-    scanf("%d",&a);
-    while(i<a)
+
+    int num, temp = 0;
+    scanf("%d", &num);
+
+        int i = 2; 
+    while (i <= num-1)
     {
-        if(a%i==0)
+
+        if (num % i == 0)
+
         {
+
             temp++;
-            break;
+
+           
+
         }
+
+        // incrementation
+
         i++;
+
     }
-    if(temp==0&&a!=1)
+
+    // check for the value of temp and num.
+
+    if (temp == 0 && num != 1)
+
     {
+
         printf("Prime");
+
     }
+
     else
+
     {
-    printf("Not Prime");
-}
-    
+
+        printf("Not Prime", num);
+
+    }
+
+   
+
 }
