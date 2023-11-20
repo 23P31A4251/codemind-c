@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d=0,e,f,g=0,h;
+    scanf("%d",&a);
+    b=a*a;
+    e=a;
+    while(b>0)
+    {
+        c=b%10;
+        b=b/10;
+        d=d*10+c;
+    }
+    while(e>0)
+    {
+        f=e%10;
+        e=e/10;
+        g=g*10+f;
+    }
+    h=g*g;
+    if(d==h&&a%10!=0)
+    {
+        printf("True");
+    }
+    if(d!=h||a%10==0)
+    {
+        printf("False");
+    }
+}
