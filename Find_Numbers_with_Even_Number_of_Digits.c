@@ -1,24 +1,25 @@
 #include<stdio.h>
 int main()
 {
-    int b,c,d=0,i,k=0,j;
+    int b,c,d,i,j,e=0,f=0,k=0;
     scanf("%d",&b);
     int a[b];
     for(i=0;i<b;i++)
     {
-        d=0;
         scanf("%d",&a[i]);
         c=a[i];
-        while(c!=0)
+        j=a[i];
+        f=0;
+        e=0;
+        while(j!=0)
         {
-            c=c/10;
-            d++;
+            j=j/10;
+            f++;
         }
-        if(d%2==0)
+        if(f%2==0)
         {
-            k++;
+           k++;
         }
     }
     printf("%d",k);
-    
 }
